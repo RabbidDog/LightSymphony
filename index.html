@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Light Symphony</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <!-- <script src="systemjs.config.js"></script> -->
+    <script>
+        System.config({
+            packages:{
+                app:{
+                    format:'register',
+                    defaultExtension:'js'
+                }
+            }
+        })
+    </script>
+    <script>
+        System.import('boot').catch(function(err){ console.error(err); });
+    </script>
+
+    <style type="text/css" id="gwd-text-style">
+        p {
+            margin: 0px;
+        }
+        h1 {
+            margin: 0px;
+        }
+        h2 {
+            margin: 0px;
+        }
+        h3 {
+            margin: 0px;
+        }
+    </style>
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        body {
+            transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+            transform-style: preserve-3d;
+            background-color: transparent;
+        }
+        .gwd-p-efiv {
+            position: absolute;
+            font-family: Oswald;
+            left: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            height: 43px;
+            top: 20px;
+            transform-origin: 28.5px 11px 0px;
+            width: 166px;
+        }
+        .gwd-span-1fa4 {
+            font-weight: bold;
+        }
+        .gwd-span-1mg8 {
+            font-family: Cabin;
+        }
+        .gwd-span-cyfv {
+            font-family: Lobster;
+            font-weight: normal;
+        }
+        .gwd-span-kn3a {
+            font-family: Raleway;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Lora|Montserrat|Cabin|Candal|Lobster|Pacifico|Courgette|Lobster+Two|Source+Sans+Pro|Raleway" rel="stylesheet" type="text/css">
+</head>
+<!-- 3. Display the application -->
+<body>
+<p class="gwd-p-efiv"><span class="gwd-span-1fa4 gwd-span-1mg8 gwd-span-cyfv gwd-span-kn3a">aquaLEDs.de</span><br>
+
+</p>
+    <light-symphony> </light-symphony>
+</body>
+</html>
